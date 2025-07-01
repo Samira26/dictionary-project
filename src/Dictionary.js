@@ -6,11 +6,11 @@ import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState(null);
-  let [definition, setDefinition] = useState(null);
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
     console.log(response.data[0]);
-    setDefinition(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function search(event) {
@@ -35,7 +35,7 @@ export default function Dictionary() {
           onChange={handleKeywordUpdate}
         />
       </form>
-      <Results definition={definition} />
+      <Results results={results} />
     </div>
   );
 }
