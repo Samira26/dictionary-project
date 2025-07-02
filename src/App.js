@@ -5,8 +5,8 @@ import dictionaryBook from "./dictionaryBook.png";
 export default function App() {
   return (
     <div className="App">
-      <div className="container m-5">
-        <header className="App-header"></header>
+      <div className="container">
+        <header className="App-header mt-5"></header>
         <img
           src={dictionaryBook}
           className="dictionary-image img-fluid"
